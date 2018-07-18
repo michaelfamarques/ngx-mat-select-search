@@ -303,7 +303,7 @@ describe('MatSelectSearchComponent', () => {
                     expect(component.matSelect.options.first.value.id).toBe('C');
                     expect(component.matSelect.options.first.active).toBe(true, 'first active');
 
-                    component.matSelectSearch._reset(true);
+                    component.matSelectSearch._reset(true, false);
                     fixture.detectChanges();
 
                     // check focus
